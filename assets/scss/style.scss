@@ -133,32 +133,30 @@ textarea {
 }
 
 aside.left-panel {
-    background: $menu-bg;
     display: table-cell;
     height: 100vh;
     min-height: 100%;
-    padding: 0 25px;
     vertical-align: top;
-    width: 280px;
+    width: 100%;
     transition: width 0.3s ease;
+    border-right: 1px solid $border-layout;
 }
 
 .navbar {
-    background: #272c33;
     border-radius: 0;
     border: none;
     display: block;
-    margin: 0 0 100px;
+    margin: 0 0 40px;
     padding: 0;
 
     .navbar-header {
         float: none;
         text-align: center;
         width: 100%;
+        background-color: $header-bg;
     }
 
     .navbar-brand {
-        border-bottom: 1px solid #4e4e52;
         color: #f1f2f7 !important;
         font-family: 'Open Sans';
         font-size: 22px;
@@ -168,7 +166,7 @@ aside.left-panel {
         text-align: left;
         text-transform: capitalize;
         display: block;
-        min-height: 69px;
+        min-height: 62px;
         padding: 0;
         display: flex;
         justify-content: center;
@@ -189,8 +187,8 @@ aside.left-panel {
     }
 
     .menu-title {
-        border-bottom: 1px solid #4e4e52;
-        color: #9496a1;
+        /*border-bottom: 1px solid $border-layout;*/
+        color: #606060;
         clear: both;
         display: block;
         font-family: 'Open Sans';
@@ -221,7 +219,7 @@ aside.left-panel {
 
             > a {
                 background: none !important;
-                color: #c8c9ce !important;
+                color: #606060 !important;
                 display: inline-block;
                 font-family: 'Open Sans';
                 font-size: 14px;
@@ -232,14 +230,14 @@ aside.left-panel {
 
                 &:hover,
                 &:hover .menu-icon {
-                    color: #fff !important;
+                    font-weight: bold;
                 }
 
                 .menu-icon {
                     color: #8b939b;
                     float: left;
                     margin-top: 8px;
-                    width: 55px;
+                    width: 24px;
                     text-align: left;
                     z-index: 9;
                 }
@@ -286,11 +284,10 @@ aside.left-panel {
                 }
 
                 .sub-menu {
-                    background: $menu-bg;
                     border: none;
                     box-shadow: none;
                     overflow-y: hidden;
-                    padding: 0 0 0 35px;
+                    padding: 0 0 0 24px;
 
                     li {
                         position: relative;
@@ -502,7 +499,7 @@ body.open {
 }
 /* Right panel */
 .right-panel {
-    display: table-cell;
+    // display: table-cell;
     padding-left: 0 !important;
     -webkit-transition: all 0.35s ease;
     -moz-transition: all 0.35s ease;
@@ -553,15 +550,10 @@ body.open {
 
 .right-panel header.header {
     background: $header-bg;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
     clear: both;
     display: inline-block;
-    padding: 15px 20px 13px;
+    padding: 6px 20px;
     width: 100%;
-}
-
-.open .right-panel {
-    margin-left: -210px;
 }
 
 header.fixed-top {
@@ -574,20 +566,21 @@ header.fixed-top {
 }
 
 .menutoggle {
-    background: #e74c3c;
+    background: white;
     border-radius: 50%;
-    color: #fff !important;
+    border: 1px solid $border-layout;
+    color: #4C5157 !important;
     cursor: pointer;
     font-size: 18px;
     height: 43px;
     line-height: 44px;
-    margin: -2px 20px 0 -57px;
+    margin: 4px 20px 0 -57px;
     text-align: center;
     width: 43px;
 }
 
 .open .menutoggle i:before {
-    content: "\f0a4";
+    content: "\f105";
 }
 
 .search-trigger {
@@ -894,12 +887,12 @@ header .form-inline {
 
 .content {
     float: left;
-    padding: 0 20px;
+    // padding: 0 20px;
     width: 100%;
 }
 
 .card {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     border-radius: 0;
 
     h4 {
@@ -1880,10 +1873,15 @@ header .form-inline {
         }
     }
 }
+
+.open .right-panel {
+    margin-left: -14.5%;
+}
+
 // Responsive Styles
 @media (max-width: 1368px) {
     .content {
-        padding: 0 15px;
+        // padding: 0 15px;
     }
 
     .twt-category {
@@ -1904,17 +1902,20 @@ header .form-inline {
     }
 
     .card-body {
-        padding: 15px;
+        padding: 10px;
     }
 
     .badges button {
         margin: 2px 0;
     }
+
+    .open .right-panel {
+        margin-left: -12.8%;
+    }
 }
 @media (max-width: 1024px) {
     aside.left-panel {
-        padding: 0 20px;
-        width: 200px;
+        padding: 0 3px;
     }
 
     .navbar .navbar-nav li > a .menu-icon {
@@ -1948,10 +1949,17 @@ header .form-inline {
             }
         }
     }
+
+    .open .right-panel {
+        margin-left: -10.8%;
+    }
 }
 @media (max-width: 992px) {
     [class*="col"].no-padding {
         flex: none;
+    }
+    .open .right-panel {
+        margin-left: -20.8%;
     }
 }
 @media (max-width: 575.99px) {
@@ -1963,14 +1971,13 @@ header .form-inline {
         display: block;
         height: auto;
         min-height: inherit;
-        padding: 0 15px;
         width: 100%;
 
         .navbar {
             margin-bottom: 0;
 
             .navbar-header {
-                height: 50px;
+                height: 72px;
             }
 
             .navbar-brand {
@@ -2060,7 +2067,7 @@ header .form-inline {
         }
 
         .content {
-            padding: 0 10px;
+            padding: 0 20px;
 
             .card {
                 .card-title {
@@ -2120,3 +2127,101 @@ header .form-inline {
         }
     }
 }
+
+
+/* Custom */
+.navbar-collapse {
+    padding: 0 17px;
+}
+
+.dropdown-menu {
+    background-color: transparent;
+}
+
+.card {
+    border: none;
+}
+
+.card-header {
+    background-color: #00AFAB;
+    padding: .30rem;
+}
+
+.card-title {
+    color: white;
+}
+
+.card-text {
+    margin-bottom: 0;
+}
+
+.progress-large {
+    height: 2rem;
+}
+
+.progress-small {
+    height: 1.2rem;
+}
+
+.progress-bar-orange {
+    background-color: #F49C14;
+}
+
+.progress-bar-gray {
+    background-color: #A5A5A5;
+}
+
+.progress-bar-alert {
+    background-color: $color-alert;
+}
+
+.txt-dhm {
+    font-size: $txt-dhm;
+}
+
+.table-txt-center {
+    text-align: center;
+}
+
+th, tr, td {
+    border: 4px solid #F3F4F8;
+}
+
+td {
+    background-color: white !important;
+}
+
+th.bg-primary-db {
+    background-color: #00AFAB;
+    color: white;
+    font-size: 1rem;
+}
+
+.table td, .table th {
+    padding: .25rem;
+}
+
+.p25 {
+    width: 25%;
+}
+.p30 {
+    width: 30%;
+}
+.p70 {
+    width: 70%;
+}
+.card-alert {
+    border: 3px solid $color-alert;
+    border-radius: 6px;
+}
+
+.color-white {
+    color: white;
+}
+
+.btn-db {
+    background-color: $color-green-db;
+    border-radius: 4px;
+    color: white;
+}
+
