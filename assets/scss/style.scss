@@ -2143,7 +2143,7 @@ header .form-inline {
 }
 
 .card-header {
-    background-color: #00AFAB;
+    background-color: $color-green-db;
     padding: .30rem;
 }
 
@@ -2192,7 +2192,7 @@ td {
 }
 
 th.bg-primary-db {
-    background-color: #00AFAB;
+    background-color: $color-green-db;
     color: white;
     font-size: 1rem;
 }
@@ -2225,3 +2225,14 @@ th.bg-primary-db {
     color: white;
 }
 
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.bg-db {
+    background-color: $color-green-db;
+}
+
+.w50 {
+    width: 50%;
+}

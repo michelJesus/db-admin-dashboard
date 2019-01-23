@@ -2447,4 +2447,13 @@ th.bg-primary-db {
   border-radius: 4px;
   color: white; }
 
+.table td, .table th {
+  vertical-align: middle; }
+
+.bg-db {
+  background-color: #00AFAB; }
+
+.w50 {
+  width: 50%; }
+
 /*# sourceMappingURL=style.css.map */
