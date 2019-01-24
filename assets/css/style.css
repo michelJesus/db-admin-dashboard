@@ -12,838 +12,6 @@
 --------------------------------------------------------- */
 /* Bootstrap */
 @import url(../../vendors/animate.css/animate.min.css);
-.gaugejs-wrap {
-  position: relative;
-  margin: 0 auto; }
-  .gaugejs-wrap canvas.gaugejs {
-    width: 100% !important;
-    height: auto !important; }
-  .gaugejs-wrap.sparkline .value,
-  .gaugejs-wrap i {
-    top: 50%;
-    display: block;
-    width: 100%;
-    text-align: center; }
-  .gaugejs-wrap i {
-    position: absolute;
-    left: 0;
-    z-index: 1000;
-    margin-top: -15px;
-    font-size: 30px; }
-  .gaugejs-wrap.type-2 .value {
-    display: block;
-    margin-top: -85px; }
-  .gaugejs-wrap.type-2 label {
-    display: block;
-    margin-top: -10px;
-    font-size: 10px;
-    font-weight: 600;
-    color: #9da0a8;
-    text-transform: uppercase; }
-  .gaugejs-wrap.sparkline {
-    position: relative; }
-    .gaugejs-wrap.sparkline .value {
-      position: absolute;
-      margin-top: -5px;
-      font-size: 10px;
-      line-height: 10px; }
-
-.switch.switch-default {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  width: 40px;
-  height: 24px;
-  background-color: transparent;
-  cursor: pointer; }
-  .switch.switch-default .switch-input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0; }
-  .switch.switch-default .switch-label {
-    position: relative;
-    display: block;
-    height: inherit;
-    font-size: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
-    background-color: #fff;
-    border: 1px solid #e9ecef;
-    border-radius: 2px;
-    transition: opacity background 0.15s ease-out; }
-  .switch.switch-default .switch-input:checked ~ .switch-label::before {
-    opacity: 0; }
-  .switch.switch-default .switch-input:checked ~ .switch-label::after {
-    opacity: 1; }
-  .switch.switch-default .switch-handle {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border: 1px solid #e9ecef;
-    border-radius: 1px;
-    transition: left 0.15s ease-out; }
-  .switch.switch-default .switch-input:checked ~ .switch-handle {
-    left: 18px; }
-  .switch.switch-default.switch-lg {
-    width: 48px;
-    height: 28px; }
-    .switch.switch-default.switch-lg .switch-label {
-      font-size: 12px; }
-    .switch.switch-default.switch-lg .switch-handle {
-      width: 24px;
-      height: 24px; }
-    .switch.switch-default.switch-lg .switch-input:checked ~ .switch-handle {
-      left: 22px; }
-  .switch.switch-default.switch-sm {
-    width: 32px;
-    height: 20px; }
-    .switch.switch-default.switch-sm .switch-label {
-      font-size: 8px; }
-    .switch.switch-default.switch-sm .switch-handle {
-      width: 16px;
-      height: 16px; }
-    .switch.switch-default.switch-sm .switch-input:checked ~ .switch-handle {
-      left: 14px; }
-  .switch.switch-default.switch-xs {
-    width: 24px;
-    height: 16px; }
-    .switch.switch-default.switch-xs .switch-label {
-      font-size: 7px; }
-    .switch.switch-default.switch-xs .switch-handle {
-      width: 12px;
-      height: 12px; }
-    .switch.switch-default.switch-xs .switch-input:checked ~ .switch-handle {
-      left: 10px; }
-
-.switch.switch-text {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  width: 48px;
-  height: 24px;
-  background-color: transparent;
-  cursor: pointer; }
-  .switch.switch-text .switch-input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0; }
-  .switch.switch-text .switch-label {
-    position: relative;
-    display: block;
-    height: inherit;
-    font-size: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
-    background-color: #fff;
-    border: 1px solid #e9ecef;
-    border-radius: 2px;
-    transition: opacity background 0.15s ease-out; }
-  .switch.switch-text .switch-label::after,
-  .switch.switch-text .switch-label::before {
-    position: absolute;
-    top: 50%;
-    width: 50%;
-    margin-top: -.5em;
-    line-height: 1;
-    text-align: center;
-    transition: inherit; }
-  .switch.switch-text .switch-label::before {
-    right: 1px;
-    color: #e9ecef;
-    content: attr(data-off); }
-  .switch.switch-text .switch-label::after {
-    left: 1px;
-    color: #fff;
-    content: attr(data-on);
-    opacity: 0; }
-  .switch.switch-text .switch-input:checked ~ .switch-label::before {
-    opacity: 0; }
-  .switch.switch-text .switch-input:checked ~ .switch-label::after {
-    opacity: 1; }
-  .switch.switch-text .switch-handle {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border: 1px solid #e9ecef;
-    border-radius: 1px;
-    transition: left 0.15s ease-out; }
-  .switch.switch-text .switch-input:checked ~ .switch-handle {
-    left: 26px; }
-  .switch.switch-text.switch-lg {
-    width: 56px;
-    height: 28px; }
-    .switch.switch-text.switch-lg .switch-label {
-      font-size: 12px; }
-    .switch.switch-text.switch-lg .switch-handle {
-      width: 24px;
-      height: 24px; }
-    .switch.switch-text.switch-lg .switch-input:checked ~ .switch-handle {
-      left: 30px; }
-  .switch.switch-text.switch-sm {
-    width: 40px;
-    height: 20px; }
-    .switch.switch-text.switch-sm .switch-label {
-      font-size: 8px; }
-    .switch.switch-text.switch-sm .switch-handle {
-      width: 16px;
-      height: 16px; }
-    .switch.switch-text.switch-sm .switch-input:checked ~ .switch-handle {
-      left: 22px; }
-  .switch.switch-text.switch-xs {
-    width: 32px;
-    height: 16px; }
-    .switch.switch-text.switch-xs .switch-label {
-      font-size: 7px; }
-    .switch.switch-text.switch-xs .switch-handle {
-      width: 12px;
-      height: 12px; }
-    .switch.switch-text.switch-xs .switch-input:checked ~ .switch-handle {
-      left: 18px; }
-
-.switch.switch-icon {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  width: 48px;
-  height: 24px;
-  background-color: transparent;
-  cursor: pointer; }
-  .switch.switch-icon .switch-input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0; }
-  .switch.switch-icon .switch-label {
-    position: relative;
-    display: block;
-    height: inherit;
-    font-family: FontAwesome;
-    font-size: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
-    background-color: #fff;
-    border: 1px solid #e9ecef;
-    border-radius: 2px;
-    transition: opacity background 0.15s ease-out; }
-  .switch.switch-icon .switch-label::after,
-  .switch.switch-icon .switch-label::before {
-    position: absolute;
-    top: 50%;
-    width: 50%;
-    margin-top: -.5em;
-    line-height: 1;
-    text-align: center;
-    transition: inherit; }
-  .switch.switch-icon .switch-label::before {
-    right: 1px;
-    color: #e9ecef;
-    content: attr(data-off); }
-  .switch.switch-icon .switch-label::after {
-    left: 1px;
-    color: #fff;
-    content: attr(data-on);
-    opacity: 0; }
-  .switch.switch-icon .switch-input:checked ~ .switch-label::before {
-    opacity: 0; }
-  .switch.switch-icon .switch-input:checked ~ .switch-label::after {
-    opacity: 1; }
-  .switch.switch-icon .switch-handle {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border: 1px solid #e9ecef;
-    border-radius: 1px;
-    transition: left 0.15s ease-out; }
-  .switch.switch-icon .switch-input:checked ~ .switch-handle {
-    left: 26px; }
-  .switch.switch-icon.switch-lg {
-    width: 56px;
-    height: 28px; }
-    .switch.switch-icon.switch-lg .switch-label {
-      font-size: 12px; }
-    .switch.switch-icon.switch-lg .switch-handle {
-      width: 24px;
-      height: 24px; }
-    .switch.switch-icon.switch-lg .switch-input:checked ~ .switch-handle {
-      left: 30px; }
-  .switch.switch-icon.switch-sm {
-    width: 40px;
-    height: 20px; }
-    .switch.switch-icon.switch-sm .switch-label {
-      font-size: 8px; }
-    .switch.switch-icon.switch-sm .switch-handle {
-      width: 16px;
-      height: 16px; }
-    .switch.switch-icon.switch-sm .switch-input:checked ~ .switch-handle {
-      left: 22px; }
-  .switch.switch-icon.switch-xs {
-    width: 32px;
-    height: 16px; }
-    .switch.switch-icon.switch-xs .switch-label {
-      font-size: 7px; }
-    .switch.switch-icon.switch-xs .switch-handle {
-      width: 12px;
-      height: 12px; }
-    .switch.switch-icon.switch-xs .switch-input:checked ~ .switch-handle {
-      left: 18px; }
-
-.switch.switch-3d {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  width: 40px;
-  height: 24px;
-  background-color: transparent;
-  cursor: pointer; }
-  .switch.switch-3d .switch-input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0; }
-  .switch.switch-3d .switch-label {
-    position: relative;
-    display: block;
-    height: inherit;
-    font-size: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
-    background-color: #f8f9fa;
-    border: 1px solid #e9ecef;
-    border-radius: 2px;
-    transition: opacity background 0.15s ease-out; }
-  .switch.switch-3d .switch-input:checked ~ .switch-label::before {
-    opacity: 0; }
-  .switch.switch-3d .switch-input:checked ~ .switch-label::after {
-    opacity: 1; }
-  .switch.switch-3d .switch-handle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 24px;
-    height: 24px;
-    background: #fff;
-    border: 1px solid #e9ecef;
-    border-radius: 1px;
-    transition: left 0.15s ease-out;
-    border: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); }
-  .switch.switch-3d .switch-input:checked ~ .switch-handle {
-    left: 16px; }
-  .switch.switch-3d.switch-lg {
-    width: 48px;
-    height: 28px; }
-    .switch.switch-3d.switch-lg .switch-label {
-      font-size: 12px; }
-    .switch.switch-3d.switch-lg .switch-handle {
-      width: 28px;
-      height: 28px; }
-    .switch.switch-3d.switch-lg .switch-input:checked ~ .switch-handle {
-      left: 20px; }
-  .switch.switch-3d.switch-sm {
-    width: 32px;
-    height: 20px; }
-    .switch.switch-3d.switch-sm .switch-label {
-      font-size: 8px; }
-    .switch.switch-3d.switch-sm .switch-handle {
-      width: 20px;
-      height: 20px; }
-    .switch.switch-3d.switch-sm .switch-input:checked ~ .switch-handle {
-      left: 12px; }
-  .switch.switch-3d.switch-xs {
-    width: 24px;
-    height: 16px; }
-    .switch.switch-3d.switch-xs .switch-label {
-      font-size: 7px; }
-    .switch.switch-3d.switch-xs .switch-handle {
-      width: 16px;
-      height: 16px; }
-    .switch.switch-3d.switch-xs .switch-input:checked ~ .switch-handle {
-      left: 8px; }
-
-.switch-pill .switch-handle, .switch.switch-3d .switch-handle,
-.switch-pill .switch-label,
-.switch.switch-3d .switch-label {
-  border-radius: 50em !important; }
-.switch-pill .switch-label::before, .switch.switch-3d .switch-label::before {
-  right: 2px !important; }
-.switch-pill .switch-label::after, .switch.switch-3d .switch-label::after {
-  left: 2px !important; }
-
-.switch-primary > .switch-input:checked ~ .switch-label {
-  background: #007bff !important;
-  border-color: #0062cc; }
-.switch-primary > .switch-input:checked ~ .switch-handle {
-  border-color: #0062cc; }
-
-.switch-primary-outline > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #007bff; }
-  .switch-primary-outline > .switch-input:checked ~ .switch-label::after {
-    color: #007bff; }
-.switch-primary-outline > .switch-input:checked ~ .switch-handle {
-  border-color: #007bff; }
-
-.switch-primary-outline-alt > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #007bff; }
-  .switch-primary-outline-alt > .switch-input:checked ~ .switch-label::after {
-    color: #007bff; }
-.switch-primary-outline-alt > .switch-input:checked ~ .switch-handle {
-  background: #007bff !important;
-  border-color: #007bff; }
-
-.switch-secondary > .switch-input:checked ~ .switch-label {
-  background: #868e96 !important;
-  border-color: #6c757d; }
-.switch-secondary > .switch-input:checked ~ .switch-handle {
-  border-color: #6c757d; }
-
-.switch-secondary-outline > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #868e96; }
-  .switch-secondary-outline > .switch-input:checked ~ .switch-label::after {
-    color: #868e96; }
-.switch-secondary-outline > .switch-input:checked ~ .switch-handle {
-  border-color: #868e96; }
-
-.switch-secondary-outline-alt > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #868e96; }
-  .switch-secondary-outline-alt > .switch-input:checked ~ .switch-label::after {
-    color: #868e96; }
-.switch-secondary-outline-alt > .switch-input:checked ~ .switch-handle {
-  background: #868e96 !important;
-  border-color: #868e96; }
-
-.switch-success > .switch-input:checked ~ .switch-label {
-  background: #28a745 !important;
-  border-color: #1e7e34; }
-.switch-success > .switch-input:checked ~ .switch-handle {
-  border-color: #1e7e34; }
-
-.switch-success-outline > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #28a745; }
-  .switch-success-outline > .switch-input:checked ~ .switch-label::after {
-    color: #28a745; }
-.switch-success-outline > .switch-input:checked ~ .switch-handle {
-  border-color: #28a745; }
-
-.switch-success-outline-alt > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #28a745; }
-  .switch-success-outline-alt > .switch-input:checked ~ .switch-label::after {
-    color: #28a745; }
-.switch-success-outline-alt > .switch-input:checked ~ .switch-handle {
-  background: #28a745 !important;
-  border-color: #28a745; }
-
-.switch-info > .switch-input:checked ~ .switch-label {
-  background: #17a2b8 !important;
-  border-color: #117a8b; }
-.switch-info > .switch-input:checked ~ .switch-handle {
-  border-color: #117a8b; }
-
-.switch-info-outline > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #17a2b8; }
-  .switch-info-outline > .switch-input:checked ~ .switch-label::after {
-    color: #17a2b8; }
-.switch-info-outline > .switch-input:checked ~ .switch-handle {
-  border-color: #17a2b8; }
-
-.switch-info-outline-alt > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #17a2b8; }
-  .switch-info-outline-alt > .switch-input:checked ~ .switch-label::after {
-    color: #17a2b8; }
-.switch-info-outline-alt > .switch-input:checked ~ .switch-handle {
-  background: #17a2b8 !important;
-  border-color: #17a2b8; }
-
-.switch-warning > .switch-input:checked ~ .switch-label {
-  background: #ffc107 !important;
-  border-color: #d39e00; }
-.switch-warning > .switch-input:checked ~ .switch-handle {
-  border-color: #d39e00; }
-
-.switch-warning-outline > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #ffc107; }
-  .switch-warning-outline > .switch-input:checked ~ .switch-label::after {
-    color: #ffc107; }
-.switch-warning-outline > .switch-input:checked ~ .switch-handle {
-  border-color: #ffc107; }
-
-.switch-warning-outline-alt > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #ffc107; }
-  .switch-warning-outline-alt > .switch-input:checked ~ .switch-label::after {
-    color: #ffc107; }
-.switch-warning-outline-alt > .switch-input:checked ~ .switch-handle {
-  background: #ffc107 !important;
-  border-color: #ffc107; }
-
-.switch-danger > .switch-input:checked ~ .switch-label {
-  background: #dc3545 !important;
-  border-color: #bd2130; }
-.switch-danger > .switch-input:checked ~ .switch-handle {
-  border-color: #bd2130; }
-
-.switch-danger-outline > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #dc3545; }
-  .switch-danger-outline > .switch-input:checked ~ .switch-label::after {
-    color: #dc3545; }
-.switch-danger-outline > .switch-input:checked ~ .switch-handle {
-  border-color: #dc3545; }
-
-.switch-danger-outline-alt > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #dc3545; }
-  .switch-danger-outline-alt > .switch-input:checked ~ .switch-label::after {
-    color: #dc3545; }
-.switch-danger-outline-alt > .switch-input:checked ~ .switch-handle {
-  background: #dc3545 !important;
-  border-color: #dc3545; }
-
-.switch-light > .switch-input:checked ~ .switch-label {
-  background: #f8f9fa !important;
-  border-color: #dae0e5; }
-.switch-light > .switch-input:checked ~ .switch-handle {
-  border-color: #dae0e5; }
-
-.switch-light-outline > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #f8f9fa; }
-  .switch-light-outline > .switch-input:checked ~ .switch-label::after {
-    color: #f8f9fa; }
-.switch-light-outline > .switch-input:checked ~ .switch-handle {
-  border-color: #f8f9fa; }
-
-.switch-light-outline-alt > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #f8f9fa; }
-  .switch-light-outline-alt > .switch-input:checked ~ .switch-label::after {
-    color: #f8f9fa; }
-.switch-light-outline-alt > .switch-input:checked ~ .switch-handle {
-  background: #f8f9fa !important;
-  border-color: #f8f9fa; }
-
-.switch-dark > .switch-input:checked ~ .switch-label {
-  background: #343a40 !important;
-  border-color: #1d2124; }
-.switch-dark > .switch-input:checked ~ .switch-handle {
-  border-color: #1d2124; }
-
-.switch-dark-outline > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #343a40; }
-  .switch-dark-outline > .switch-input:checked ~ .switch-label::after {
-    color: #343a40; }
-.switch-dark-outline > .switch-input:checked ~ .switch-handle {
-  border-color: #343a40; }
-
-.switch-dark-outline-alt > .switch-input:checked ~ .switch-label {
-  background: #fff !important;
-  border-color: #343a40; }
-  .switch-dark-outline-alt > .switch-input:checked ~ .switch-label::after {
-    color: #343a40; }
-.switch-dark-outline-alt > .switch-input:checked ~ .switch-handle {
-  background: #343a40 !important;
-  border-color: #343a40; }
-
-.social-box {
-  min-height: 160px;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  background: #fff; }
-  .social-box i {
-    display: block;
-    margin: -1px -1px 0;
-    font-size: 40px;
-    line-height: 90px;
-    background: #e9ecef; }
-  .social-box .chart-wrapper {
-    height: 90px;
-    margin: -90px 0 0; }
-    .social-box .chart-wrapper canvas {
-      width: 100% !important;
-      height: 90px !important; }
-  .social-box ul {
-    padding: 10px 0;
-    list-style: none; }
-    .social-box ul li {
-      display: block;
-      float: left;
-      width: 50%;
-      padding-top: 10px;
-      font-size: 18px; }
-      .social-box ul li:first-child {
-        border-right: 1px solid #c2cfd6; }
-      .social-box ul li strong {
-        display: block;
-        font-size: 20px; }
-      .social-box ul li span {
-        font-size: 18px;
-        font-weight: 500;
-        color: #949CA0;
-        text-transform: uppercase; }
-  .social-box.facebook i {
-    color: #fff;
-    background: #3b5998; }
-  .social-box.twitter i {
-    color: #fff;
-    background: #00aced; }
-  .social-box.linkedin i {
-    color: #fff;
-    background: #4875b4; }
-  .social-box.google-plus i {
-    color: #fff;
-    background: #d34836; }
-
-.horizontal-bars {
-  padding: 0;
-  margin: 0;
-  list-style: none; }
-  .horizontal-bars li {
-    position: relative;
-    height: 40px;
-    line-height: 40px;
-    vertical-align: middle; }
-    .horizontal-bars li .title {
-      width: 100px;
-      font-size: 12px;
-      font-weight: 600;
-      color: #868e96;
-      vertical-align: middle; }
-    .horizontal-bars li .bars {
-      position: absolute;
-      top: 15px;
-      width: 100%;
-      padding-left: 100px; }
-      .horizontal-bars li .bars .progress:first-child {
-        margin-bottom: 2px; }
-    .horizontal-bars li.legend {
-      text-align: center; }
-      .horizontal-bars li.legend .badge {
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        padding: 0; }
-    .horizontal-bars li.divider {
-      height: 40px; }
-      .horizontal-bars li.divider i {
-        margin: 0 !important; }
-  .horizontal-bars.type-2 li {
-    overflow: hidden; }
-    .horizontal-bars.type-2 li i {
-      display: inline-block;
-      margin-right: 1rem;
-      margin-left: 5px;
-      font-size: 18px;
-      line-height: 40px; }
-    .horizontal-bars.type-2 li .title {
-      display: inline-block;
-      width: auto;
-      margin-top: -9px;
-      font-size: 1rem;
-      font-weight: normal;
-      line-height: 40px;
-      color: #212529; }
-    .horizontal-bars.type-2 li .value {
-      float: right;
-      font-weight: 600; }
-    .horizontal-bars.type-2 li .bars {
-      position: absolute;
-      top: auto;
-      bottom: 0;
-      padding: 0; }
-
-.icons-list {
-  padding: 0;
-  margin: 0;
-  list-style: none; }
-  .icons-list li {
-    position: relative;
-    height: 40px;
-    vertical-align: middle; }
-    .icons-list li i {
-      display: block;
-      float: left;
-      width: 35px !important;
-      height: 35px !important;
-      margin: 2px;
-      line-height: 35px !important;
-      text-align: center; }
-    .icons-list li .desc {
-      height: 40px;
-      margin-left: 50px;
-      border-bottom: 1px solid #e9ecef; }
-      .icons-list li .desc .title {
-        padding: 2px 0 0;
-        margin: 0; }
-      .icons-list li .desc small {
-        display: block;
-        margin-top: -4px;
-        color: #868e96; }
-    .icons-list li .value {
-      position: absolute;
-      top: 2px;
-      right: 45px;
-      text-align: right; }
-      .icons-list li .value strong {
-        display: block;
-        margin-top: -3px; }
-    .icons-list li .actions {
-      position: absolute;
-      top: -4px;
-      right: 10px;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
-      text-align: center; }
-      .icons-list li .actions i {
-        float: none;
-        width: auto;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        line-height: normal; }
-    .icons-list li.divider {
-      height: 40px; }
-      .icons-list li.divider i {
-        width: auto;
-        height: auto;
-        margin: 2px 0 0;
-        font-size: 18px; }
-
-.social {
-  color: #fff; }
-  .social.btn-sm {
-    padding: 0 10px 0 0;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    border-radius: 0; }
-  .social.btn-lg {
-    border-radius: 0; }
-  .social.btn {
-    border-radius: 0; }
-  .social i {
-    width: 1.8125rem;
-    line-height: 2; }
-  .social.facebook {
-    background: #3b5998; }
-    .social.facebook:hover {
-      background: #344e86; }
-  .social.twitter {
-    background: #00aced; }
-    .social.twitter:hover {
-      background: #0099d4; }
-  .social.linkedin {
-    background: #4875b4; }
-    .social.linkedin:hover {
-      background: #4169a2; }
-  .social.flickr {
-    background: #ff0084; }
-    .social.flickr:hover {
-      background: #e60077; }
-  .social.tumblr {
-    background: #32506d; }
-    .social.tumblr:hover {
-      background: #2a435c; }
-  .social.xing {
-    background: #026466; }
-    .social.xing:hover {
-      background: #024b4d; }
-  .social.github {
-    background: #4183c4; }
-    .social.github:hover {
-      background: #3876b4; }
-  .social.html5 {
-    background: #e34f26; }
-    .social.html5:hover {
-      background: #d4431b; }
-  .social.openid {
-    background: #f78c40; }
-    .social.openid:hover {
-      background: #f67d28; }
-  .social.stack-overflow {
-    background: #fe7a15; }
-    .social.stack-overflow:hover {
-      background: #f86c01; }
-  .social.css3 {
-    background: #0170ba; }
-    .social.css3:hover {
-      background: #0161a1; }
-  .social.youtube {
-    background: #b00; }
-    .social.youtube:hover {
-      background: #a20000; }
-  .social.dribbble {
-    background: #ea4c89; }
-    .social.dribbble:hover {
-      background: #e7357a; }
-  .social.dropbox {
-    background: #007ee5; }
-    .social.dropbox:hover {
-      background: #0070cc; }
-  .social.google-plus {
-    background: #d34836; }
-    .social.google-plus:hover {
-      background: #c43d2b; }
-  .social.instagram {
-    background: #517fa4; }
-    .social.instagram:hover {
-      background: #497293; }
-  .social.pinterest {
-    background: #cb2027; }
-    .social.pinterest:hover {
-      background: #b51d23; }
-  .social.vk {
-    background: #45668e; }
-    .social.vk:hover {
-      background: #3d5a7d; }
-  .social.yahoo {
-    background: #400191; }
-    .social.yahoo:hover {
-      background: #350178; }
-  .social.behance {
-    background: #1769ff; }
-    .social.behance:hover {
-      background: #0059fd; }
-  .social.reddit {
-    background: #ff4500; }
-    .social.reddit:hover {
-      background: #e63e00; }
-  .social.spotify {
-    background: #7ab800; }
-    .social.spotify:hover {
-      background: #699f00; }
-  .social.vine {
-    background: #00bf8f; }
-    .social.vine:hover {
-      background: #00a67c; }
-  .social.foursquare {
-    background: #1073af; }
-    .social.foursquare:hover {
-      background: #0e6498; }
-  .social.vimeo {
-    background: #aad450; }
-    .social.vimeo:hover {
-      background: #a0cf3c; }
-
 .bg-flat-color-1 {
   background: #20a8d8; }
 
@@ -1203,7 +371,7 @@ body.open .navbar .navbar-brand.hidden {
     min-height: 50px;
     margin: 0;
     padding: 0 15px;
-    background: #ffffff;
+    background: #fff;
     border-bottom: 0; }
     .right-panel .page-header h1 {
       font-size: 18px;
@@ -1233,7 +401,7 @@ header.fixed-top {
   position: inherit; }
 
 .menutoggle {
-  background: white;
+  background: #fff;
   border-radius: 50%;
   border: 1px solid #C8C9CE;
   color: #4C5157 !important;
@@ -1590,7 +758,7 @@ header .form-inline {
 
 .twt-feed {
   -webkit-border-radius: 4px 4px 0 0;
-  color: #FFFFFF;
+  color: #fff;
   padding: 40px 10px 10px;
   position: relative;
   min-height: 170px; }
@@ -1708,7 +876,7 @@ header .form-inline {
   text-align: center;
   margin-bottom: 15px; }
   .login-logo span {
-    color: #ffffff;
+    color: #fff;
     font-size: 24px; }
 
 .login-content {
@@ -1716,9 +884,9 @@ header .form-inline {
   margin: 8vh auto; }
 
 .login-form {
-  background: #ffffff;
   padding: 30px 30px 20px;
-  border-radius: 2px; }
+  border-radius: 2px;
+  max-width: 260px; }
 
 .login-form h4 {
   color: #878787;
@@ -1731,13 +899,13 @@ header .form-inline {
 .login-form .checkbox label {
   text-transform: none; }
 
-.login-form .btn {
-  width: 100%;
-  text-transform: uppercase;
-  font-size: 14px;
-  padding: 15px;
-  border: 0; }
-
+/*.login-form .btn {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 15px;
+    border: 0;
+}*/
 .login-form label {
   color: #878787;
   text-transform: uppercase; }
@@ -1823,7 +991,7 @@ header .form-inline {
   background: #252525;
   border: 1px solid #252525;
   padding: 5px 15px;
-  color: #ffffff; }
+  color: #fff; }
 
 .flot-container {
   box-sizing: border-box;
@@ -1972,7 +1140,7 @@ header .form-inline {
 
 .stat-widget-three .stat-icon i {
   font-size: 30px;
-  color: #ffffff; }
+  color: #fff; }
 
 .stat-widget-three .stat-content {
   text-align: center;
@@ -2168,7 +1336,7 @@ header .form-inline {
   position: relative; }
 
 .horizontal:before {
-  background: #ffffff;
+  background: #fff;
   bottom: 0;
   content: "";
   height: 38px;
@@ -2179,14 +1347,14 @@ header .form-inline {
   width: 1px; }
 
 .widget-ten span i {
-  color: #ffffff;
+  color: #fff;
   opacity: 0.5; }
 
 .widget-ten h5 {
-  color: #ffffff; }
+  color: #fff; }
 
 .widget-ten p {
-  color: #ffffff !important;
+  color: #fff !important;
   opacity: 0.75; }
 
 /* Mixed Styles */
@@ -2386,7 +1554,7 @@ header .form-inline {
   padding: .30rem; }
 
 .card-title {
-  color: white; }
+  color: #fff; }
 
 .card-text {
   margin-bottom: 0; }
@@ -2416,11 +1584,11 @@ th, tr, td {
   border: 4px solid #F3F4F8; }
 
 td {
-  background-color: white !important; }
+  background-color: #fff !important; }
 
 th.bg-primary-db {
   background-color: #00AFAB;
-  color: white;
+  color: #fff;
   font-size: 1rem; }
 
 .table td, .table th {
@@ -2440,12 +1608,12 @@ th.bg-primary-db {
   border-radius: 6px; }
 
 .color-white {
-  color: white; }
+  color: #fff; }
 
 .btn-db {
   background-color: #00AFAB;
   border-radius: 4px;
-  color: white; }
+  color: #fff; }
 
 .table td, .table th {
   vertical-align: middle; }
@@ -2453,7 +1621,13 @@ th.bg-primary-db {
 .bg-db {
   background-color: #00AFAB; }
 
-.w50 {
-  width: 50%; }
+.input-group-text {
+  color: #fff;
+  background-color: #F49C14; }
+
+.btn-db {
+  color: #fff;
+  background-color: #F49C14;
+  border-color: #F49C14; }
 
 /*# sourceMappingURL=style.css.map */

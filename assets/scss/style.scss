@@ -11,10 +11,6 @@
 * Tags: html, themplate, Sufee-Admin
 --------------------------------------------------------- */
 @import "variables";
-@import "gauge";
-@import "switches";
-@import "widgets";
-@import "socials";
 @import "../../vendors/animate.css/animate.min.css";
 
 .bg-flat-color-1 {
@@ -210,7 +206,7 @@ aside.left-panel {
             &.active .menu-icon,
             &:hover .toggle_nav_button:before,
             .toggle_nav_button.nav-open:before {
-                color: #fff !important;
+                color: $white !important;
             }
 
             .dropdown-toggle:after {
@@ -279,7 +275,7 @@ aside.left-panel {
                     }
 
                     &:hover:before {
-                        color: #fff;
+                        color: $white;
                     }
                 }
 
@@ -344,7 +340,7 @@ aside.left-panel {
 .navbar-nav li span.count {
     background: #a9d86e;
     border-radius: 50%;
-    color: #fff;
+    color: $white;
     font-family: 'Open Sans';
     font-size: 9px;
     font-weight: 700;
@@ -508,7 +504,7 @@ body.open {
     transition: all 0.35s ease;
 
     .breadcrumbs {
-        background-color: #fff;
+        background-color: $white;
         display: inline-block;
         margin-top: 0;
         padding: 0 5px;
@@ -525,7 +521,7 @@ body.open {
         min-height: 50px;
         margin: 0;
         padding: 0 15px;
-        background: #ffffff;
+        background: $white;
         border-bottom: 0;
 
         h1 {
@@ -536,7 +532,7 @@ body.open {
         .breadcrumb {
             margin: 0;
             padding: 13.5px 0;
-            background: #fff;
+            background: $white;
             text-transform: capitalize;
         }
 
@@ -557,7 +553,7 @@ body.open {
 }
 
 header.fixed-top {
-    background: #fff;
+    background: $white;
     padding: 20px;
 }
 
@@ -566,7 +562,7 @@ header.fixed-top {
 }
 
 .menutoggle {
-    background: white;
+    background: $white;
     border-radius: 50%;
     border: 1px solid $border-layout;
     color: #4C5157 !important;
@@ -633,7 +629,7 @@ header .form-inline {
         button {
             background: transparent;
             border: none;
-            color: #fff;
+            color: $white;
             font-size: 16px;
             position: absolute;
             right: 15px;
@@ -676,7 +672,7 @@ header .form-inline {
 
         .count {
             border-radius: 50%;
-            color: #fff;
+            color: $white;
             font-size: 11px;
             height: 15px;
             width: 15px;
@@ -817,7 +813,7 @@ header .form-inline {
     .count {
         background: #d9534f;
         border-radius: 50%;
-        color: #fff;
+        color: $white;
         font-family: 'Open Sans';
         font-size: 9px;
         font-weight: 700;
@@ -917,7 +913,7 @@ header .form-inline {
                 width: 50px;
                 padding: 0.75rem 0;
                 margin: 0!important !important;
-                color: #fff;
+                color: $white;
                 outline: 0;
                 text-align: center;
                 background: transparent;
@@ -948,7 +944,7 @@ header .form-inline {
     a.active {
         color: #555;
         cursor: default;
-        background-color: #fff;
+        background-color: $white;
         border: 1px solid #ddd;
         border-bottom-color: transparent;
     }
@@ -1054,7 +1050,7 @@ header .form-inline {
 
 .corner-ribon i {
     padding: 10px 0 0 35px;
-    color: #fff;
+    color: $white;
 }
 
 .black-ribon {
@@ -1075,7 +1071,7 @@ header .form-inline {
 
 .twt-feed {
     -webkit-border-radius: 4px 4px 0 0;
-    color: #FFFFFF;
+    color: $white;
     padding: 40px 10px 10px;
     position: relative;
     min-height: 170px;
@@ -1228,7 +1224,7 @@ header .form-inline {
     margin-bottom: 15px;
 
     span {
-        color: #ffffff;
+        color: $white;
         font-size: 24px;
     }
 }
@@ -1239,9 +1235,9 @@ header .form-inline {
 }
 
 .login-form {
-    background: #ffffff;
     padding: 30px 30px 20px;
     border-radius: 2px;
+    max-width: 260px;
 }
 
 .login-form h4 {
@@ -1258,13 +1254,13 @@ header .form-inline {
     text-transform: none;
 }
 
-.login-form .btn {
+/*.login-form .btn {
     width: 100%;
     text-transform: uppercase;
     font-size: 14px;
     padding: 15px;
     border: 0;
-}
+}*/
 
 .login-form label {
     color: #878787;
@@ -1288,7 +1284,7 @@ header .form-inline {
 
     .facebook {
         background: #3b5998;
-        color: #fff;
+        color: $white;
 
         &:hover {
             background: #344e86;
@@ -1297,7 +1293,7 @@ header .form-inline {
 
     .twitter {
         background: #00aced;
-        color: #fff;
+        color: $white;
 
         &:hover {
             background: #0099d4;
@@ -1373,7 +1369,7 @@ header .form-inline {
     background: #252525;
     border: 1px solid #252525;
     padding: 5px 15px;
-    color: #ffffff;
+    color: $white;
 }
 
 .flot-container {
@@ -1432,7 +1428,7 @@ header .form-inline {
     color: #666;
     background: rgba(0, 0, 0, 0.7);
     border: none;
-    color: #fff!important;
+    color: $white!important;
 }
 
 .morris-hover-point {
@@ -1459,13 +1455,13 @@ header .form-inline {
         border-color: #212529;
         -webkit-box-shadow: none;
         box-shadow: none;
-        color: #fff;
+        color: $white;
     }
 
     .btn-outline-secondary:hover {
         background-color: #212529;
         border-color: #212529;
-        color: #fff;
+        color: $white;
     }
 }
 //
@@ -1552,7 +1548,7 @@ header .form-inline {
 
 .stat-widget-three .stat-icon i {
     font-size: 30px;
-    color: #ffffff;
+    color: $white;
 }
 
 .stat-widget-three .stat-content {
@@ -1792,7 +1788,7 @@ header .form-inline {
 }
 
 .horizontal:before {
-    background: #ffffff;
+    background: $white;
     bottom: 0;
     content: "";
     height: 38px;
@@ -1804,16 +1800,16 @@ header .form-inline {
 }
 
 .widget-ten span i {
-    color: #ffffff;
+    color: $white;
     opacity: 0.5;
 }
 
 .widget-ten h5 {
-    color: #ffffff;
+    color: $white;
 }
 
 .widget-ten p {
-    color: #ffffff !important;
+    color: $white !important;
     opacity: 0.75;
 }
 /* Mixed Styles */
@@ -1859,7 +1855,7 @@ header .form-inline {
                 a {
                     background: #272c33;
                     border-color: #272c33;
-                    color: #fff;
+                    color: $white;
                 }
             }
 
@@ -1867,7 +1863,7 @@ header .form-inline {
                 a {
                     background: #272c33;
                     border-color: #272c33;
-                    color: #fff;
+                    color: $white;
                 }
             }
         }
@@ -2148,7 +2144,7 @@ header .form-inline {
 }
 
 .card-title {
-    color: white;
+    color: $white;
 }
 
 .card-text {
@@ -2188,12 +2184,12 @@ th, tr, td {
 }
 
 td {
-    background-color: white !important;
+    background-color: $white !important;
 }
 
 th.bg-primary-db {
     background-color: $color-green-db;
-    color: white;
+    color: $white;
     font-size: 1rem;
 }
 
@@ -2216,13 +2212,13 @@ th.bg-primary-db {
 }
 
 .color-white {
-    color: white;
+    color: $white;
 }
 
 .btn-db {
     background-color: $color-green-db;
     border-radius: 4px;
-    color: white;
+    color: $white;
 }
 
 .table td, .table th {
@@ -2233,6 +2229,13 @@ th.bg-primary-db {
     background-color: $color-green-db;
 }
 
-.w50 {
-    width: 50%;
+.input-group-text {
+    color: $white;
+    background-color: $orange-db;
+}
+
+.btn-db {
+    color: $white;
+    background-color: $orange-db;
+    border-color: $orange-db;
 }
