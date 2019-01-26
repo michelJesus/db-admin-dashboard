@@ -1259,110 +1259,110 @@ header .form-inline {
     font-size: 14px;
     padding: 15px;
     border: 0;
-}*/
+    }*/
 
-.login-form label {
-    color: #878787;
-    text-transform: uppercase;
-}
+    .login-form label {
+        color: #878787;
+        text-transform: uppercase;
+    }
 
-.login-form label a {
-    color: #ff2e44;
-}
+    .login-form label a {
+        color: #ff2e44;
+    }
 
-.social-login-content {
-    margin: 0 -30px;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
-    padding: 30px 0;
-    background: #fcfcfc;
-}
+    .social-login-content {
+        margin: 0 -30px;
+        border-top: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7;
+        padding: 30px 0;
+        background: #fcfcfc;
+    }
 
-.social-button {
-    padding: 0 30px;
+    .social-button {
+        padding: 0 30px;
 
-    .facebook {
-        background: #3b5998;
-        color: $white;
+        .facebook {
+            background: #3b5998;
+            color: $white;
 
-        &:hover {
-            background: #344e86;
+            &:hover {
+                background: #344e86;
+            }
+        }
+
+        .twitter {
+            background: #00aced;
+            color: $white;
+
+            &:hover {
+                background: #0099d4;
+            }
         }
     }
 
-    .twitter {
-        background: #00aced;
-        color: $white;
-
-        &:hover {
-            background: #0099d4;
-        }
+    .social-button i {
+        padding: 19px;
     }
-}
 
-.social-button i {
-    padding: 19px;
-}
+    .register-link a {
+        color: #ff2e44;
+    }
 
-.register-link a {
-    color: #ff2e44;
-}
+    .cpu-load {
+        width: 100%;
+        height: 272px;
+        font-size: 14px;
+        line-height: 1.2em;
+    }
 
-.cpu-load {
-    width: 100%;
-    height: 272px;
-    font-size: 14px;
-    line-height: 1.2em;
-}
+    .cpu-load-data-content {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 40px;
+    }
 
-.cpu-load-data-content {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 40px;
-}
+    .cpu-load-data {
+        margin-bottom: 30px;
+    }
 
-.cpu-load-data {
-    margin-bottom: 30px;
-}
+    .cpu-load-data li {
+        display: inline-block;
+        width: 32.5%;
+        text-align: center;
+        border-right: 1px solid #e7e7e7;
+    }
 
-.cpu-load-data li {
-    display: inline-block;
-    width: 32.5%;
-    text-align: center;
-    border-right: 1px solid #e7e7e7;
-}
+    .cpu-load-data li:last-child {
+        border-right: 0;
+    }
 
-.cpu-load-data li:last-child {
-    border-right: 0;
-}
+    .nestable-cart {
+        overflow: hidden;
+    }
+    /* Forms */
+    .input-group-addon {
+        background-color: transparent;
+        border-left: 0;
+    }
 
-.nestable-cart {
-    overflow: hidden;
-}
-/* Forms */
-.input-group-addon {
-    background-color: transparent;
-    border-left: 0;
-}
+    .input-group-addon,
+    .input-group-btn {
+        white-space: nowrap;
+        vertical-align: middle;
+    }
 
-.input-group-addon,
-.input-group-btn {
-    white-space: nowrap;
-    vertical-align: middle;
-}
-
-.input-group-addon {
-    padding: 0.5rem 0.75rem;
-    margin-bottom: 0;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.25;
-    color: #495057;
-    text-align: center;
-    background-color: #e9ecef;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 0.25rem;
-}
+    .input-group-addon {
+        padding: 0.5rem 0.75rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.25;
+        color: #495057;
+        text-align: center;
+        background-color: #e9ecef;
+        border: 1px solid rgba(0,0,0,.15);
+        border-radius: 0.25rem;
+    }
 // Flot & Charts
 .flotTip {
     background: #252525;
@@ -2233,8 +2233,34 @@ th.bg-primary-db {
     background-color: $orange-db;
 }
 
-.btn-db {
+.btn-db-orange {
     color: $white;
     background-color: $orange-db;
     border-color: $orange-db;
+    border-radius: 6px;
+}
+
+.btn-db-green {
+    color: $white;
+    background-color: $color-green-db;
+    border-color: $color-green-db;
+    border-radius: 6px;
+}
+
+.btn-db-warning {
+    color: $color-green-db;
+    background-color: $white;
+    border-color: $color-green-db;
+}
+
+.btn-db-success {
+    color: $white;
+    background-color: $color-green-db;
+    border-color: $color-green-db;
+}
+
+.btn-db-warning,
+.btn-db-success {
+    border-radius: 6px;
+    width: 160px;
 }
