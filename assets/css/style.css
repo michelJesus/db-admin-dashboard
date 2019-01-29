@@ -1590,6 +1590,11 @@ th.bg-primary-db {
   color: #fff;
   font-size: 1rem; }
 
+th.bg-secondary-db {
+  background-color: #F49C14;
+  color: #fff;
+  font-size: 1rem; }
+
 .table td, .table th {
   padding: .25rem; }
 
